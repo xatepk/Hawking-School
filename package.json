@@ -1,0 +1,53 @@
+{
+  "name": "hawking-school",
+  "version": "1.0.0",
+  "description": "### Обзор",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --node-env=production",
+    "dev": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xatepk/Hawking-School.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xatepk/Hawking-School/issues"
+  },
+  "homepage": "https://github.com/xatepk/Hawking-School#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "autoprefixer": "^10.4.12",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "cssnano": "^5.1.13",
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.31.8",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^4.3.8",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "lint-staged": "^13.0.3",
+    "mini-css-extract-plugin": "^2.6.1",
+    "path": "^0.12.7",
+    "pug": "^3.0.2",
+    "pug-plugin": "^4.4.0",
+    "style-loader": "^3.3.1",
+    "svgo-loader": "^3.0.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "core-js": "^3.25.5"
+  }
+}

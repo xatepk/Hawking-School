@@ -1,0 +1,16 @@
+h2.consultation__title необходима консультация?
+p.consultation__heading оставьте заявку или свяжитесь с нами в социальных сетях
+ul.consultation__icons-list
+  for i in [1,2,3,4]
+    li.consultation__icon
+      a(href='#').consultation__icon-list
+        img(src="" alt="").consultation__icon-image
+form(method="POST" action="#" name="profile" novalidate).consultation__form
+  h2.consultation__form-title Для #[span.consultation__form-title_orange консультации] заполните форму!
+  p.consultation__form-heading С Вами свяжутся в ближайшее время
+  input(type="text" name="name" class="consultation__item consultation__item_el_name consultation__input" placeholder="Ваше Имя" id="name-input" required minlength="2" maxlength="40" autocomplete="off")
+  span(class='consultation__input-error' id='name-input-error')
+  input(type="text" name="telephone" class="consultation__item consultation__item_el_telephone consultation__input" placeholder="Ваш телефон" id="telephone-input" required minlength="2" maxlength="200" autocomplete="off")
+  span(class='consultation__input-error' id='telephone-input-error')
+  input(type="submit" value= "Отправить" class='consultation__button consultation__input')
+
