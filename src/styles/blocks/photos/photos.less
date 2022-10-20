@@ -1,19 +1,8 @@
 .photos {
-  width: 100%;
-  min-width: 1217px;
+  .max-width-mixin();
+  .ptborder ();
 
-  &__title {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 49px;
-    margin: 0;
-    padding-bottom: 66px;
-  }
-
-  &__description {
-    font-size: 16px;
-    line-height: 30px;
-    margin: 0;
-    padding-bottom: 48px;
+  &:before {
+    .border ();
   }
 }

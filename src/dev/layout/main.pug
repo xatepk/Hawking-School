@@ -6,14 +6,20 @@ html(lang="en")
     meta(name='description', content='Some description')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title='Hawking-School'
-    script(type='text/javascript').
+    script(type='text/javascript')
   body
     .page
       include ../modules/header
       main.content
+        section.description
+          block description
+        section.mounting
+          block mounting
+        section.arguments
+          block arguments
         section.consultation
           block consultation
         section.video
           block video
-        section.photo
+        section.photos
           block photo

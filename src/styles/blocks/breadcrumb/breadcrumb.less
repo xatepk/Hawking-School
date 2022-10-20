@@ -1,0 +1,32 @@
+.breadcrumb {
+  padding: 14px 0 19px 0;
+  list-style: none;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+
+  & li+li:before {
+    padding: 6px;
+    color: #4C858B;
+    content: "\003E";
+  }
+
+  &__item {
+    display: inline;
+    font-size: 12px;
+    line-height: 15px;
+
+    &_is-active {
+      color: #4C858B;
+    }
+  }
+
+  &__item-link {
+    color: #B1B1B1;
+    text-decoration: none;
+
+    &:hover {
+      color: #4C858B;
+      text-decoration: underline;
+    }
+  }
+}

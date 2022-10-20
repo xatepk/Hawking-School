@@ -22,7 +22,7 @@ module.exports = {
   devServer: {
     static: path.resolve(__dirname, 'dist'),
     port: 8080,
-    open: true,
+    // open: true,
     hot: true,
   },
   module: {
@@ -53,7 +53,7 @@ module.exports = {
       },
       {
         test: /\.less$/i,
-        use: [devMode ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'less-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader'],
       },
     ],
   },
@@ -62,14 +62,8 @@ module.exports = {
       template: path.resolve(__dirname, 'src', 'dev', 'index.pug'),
       filename: 'index.html',
     }),
-    // new PugPlugin({
-    //   pretty: true,
-    //   extractCss: {
-    //     filename: 'assets/css/[name].[contenthash:8].css'
-    //   }
-    // }),
-    !devMode && new MiniCssExtractPlugin({
-      filename: 'index.css',
+    new MiniCssExtractPlugin({
+      filename: 'assets/css/[name].[contenthash:8].css',
     }),
   ].filter(Boolean),
   optimization: {

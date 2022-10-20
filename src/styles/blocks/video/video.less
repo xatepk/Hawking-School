@@ -1,25 +1,15 @@
 .video {
-  width: 100%;
-  min-width: 1217px;
+  .max-width-mixin();
+  .ptborder ();
 
-  &__title {
-    font-size: 46px;
-    line-height: 49px;
-    font-weight: 600;
-    margin: 0;
-  }
-
-  &__description {
-    font-size: 16px;
-    line-height: 30px;
-    margin: 0 auto;
-    padding-top: 66px;
-    padding-bottom: 100px;
+  &:before {
+    .border ();
   }
 
   &__movie {
     display: inherit;
     margin: 0 auto;
+    margin-top: 100px;
     width: 100%;
     max-width: 771px;
     height: 438px;
