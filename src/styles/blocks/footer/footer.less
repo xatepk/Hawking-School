@@ -8,7 +8,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 88px 0 92px 0;
+    padding: 71px 0 92px 0;
   }
 
   &__title {
@@ -35,6 +35,8 @@
   &__link {
     text-decoration: none;
     color: #fff;
+    font-size: 14px;
+    line-height: 17px;
 
     &:hover {
       opacity: .8;
@@ -45,7 +47,7 @@
   &__address {
     display: grid;
     grid-template-columns: min-content 1fr;
-    grid-gap: 17px 8px;
+    grid-row-gap: 4px;
     align-items: center;
   }
 
@@ -79,6 +81,15 @@
 
     &:last-of-type{
       margin-right: 0;
+    }
+  }
+
+  &__block {
+    &:nth-child(2) {
+      margin-left: 33px;
+    }
+    &:nth-child(3) {
+      margin-left: 100px;
     }
   }
 }
