@@ -1,1 +1,43 @@
-header.header
+a(href="#").header__logo
+  img(src=require('../../img/logo.svg') alt='логотип')
+ul.header__bar-list
+  li.header__bar-item
+    a(href='#').header__bar-link Каталог товаров
+  li.header__bar-item
+    a(href='#').header__bar-link Доставка и оплата
+  li.header__bar-item
+    a(href='#').header__bar-link Цены
+  li.header__bar-item
+    a(href='#').header__bar-link Контакты
+ul.header__contacts-list
+  li.header__contacts-item
+    a(href='tel:+78125092198').header__contacts-link #[span.header__contacts-link_green +7 (812)] #[span.header__contacts-link_bold 509 21 98]
+  li.header__contacts-item
+    span.header__contacts-feedback Перезвоните мне
+  li.header__contacts-item
+    ul.networks.networks__list
+      li.networks__list-item
+        a(href='#').networks__item-link
+          img(src=require('../../img/socialicons/vk.svg') alt='иконка vk').networks__item-img
+      li.networks__list-item
+        a(href='#').networks__item-link
+          img(src=require('../../img/socialicons/tg.svg') alt='иконка telegram').networks__item-img
+      li.networks__list-item
+        a(href='#').networks__item-link
+          img(src=require('../../img/socialicons/ig.svg') alt='иконка instagram').networks__item-img
+      li.networks__list-item
+        a(href='#').networks__item-link
+          img(src=require('../../img/socialicons/tel.svg') alt='иконка tel').networks__item-img
+ul.header__icons-list
+  li.header__icons-item
+    a(href='#').header__icons-link
+      img(src=require('../../img/headericons/search.svg')).header__icons-img
+  li.header__icons-item
+    a(href='#').header__icons-link
+      img(src=require('../../img/headericons/like.svg')).header__icons-img
+  li.header__icons-item
+    a(href='#').header__icons-link
+      img(src=require('../../img/headericons/bin.svg')).header__icons-img
+  li.header__icons-item
+    a(href='#').header__icons-link
+      img(src=require('../../img/headericons/sidebar.svg')).header__icons-img

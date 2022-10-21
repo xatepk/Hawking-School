@@ -9,7 +9,8 @@ html(lang="en")
     script(type='text/javascript')
   body
     .page
-      include ../modules/header
+      header.header
+        block header
       main.content
         section.description
           block description
