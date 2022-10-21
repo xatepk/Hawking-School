@@ -38,10 +38,28 @@
   .footer__block
     h2.footer__title Время работы
     address.footer__address
-      img(src=require('../../img/icons/time.svg') alt='иконки адресса').footer__address-icon
+      svg(aria-hidden="true" width="15" height="15").footer__address-icon
+        use(xlink:href='icons.svg#time')
       span.footer__address-desc #[span.footer__address-desc_green пн-пт] 9:00 – 20:00 #[span.footer__address-desc_green сб-вс] 10:00 – 18:00
-      img(src=require('../../img/icons/geo.svg') alt='иконки адресса').footer__address-icon
+      svg(aria-hidden="true" width="17" height="17").footer__address-icon
+        use(xlink:href='icons.svg#geo')
       a(href='#' target='_blank').footer__address-link
         span.footer__address-desc г. Санкт-Петербург, ул. Тамбасова д.7
-
+    ul.networks.networks__list.footer__networks
+      li.networks__list-item.footer__list-item
+        a(href='#').networks__item-link
+          svg(aria-hidden="true" width="23" height="23" fill="#4C858B").networks__item-img.networks__item-img_orange
+            use(xlink:href='icons.svg#vk' )
+      li.networks__list-item.footer__list-item
+        a(href='#').networks__item-link
+          svg(aria-hidden="true" width="22" height="23" fill="#4C858B").networks__item-img
+            use(xlink:href='icons.svg#tg')
+      li.networks__list-item.footer__list-item
+        a(href='#').networks__item-link
+          svg(aria-hidden="true" width="18" height="19" fill="#4C858B").networks__item-img
+              use(xlink:href='icons.svg#ig')
+      li.networks__list-item.footer__list-item
+        a(href='#').networks__item-link
+          svg(aria-hidden="true" width="18" height="19" fill="#4C858B").networks__item-img
+            use(xlink:href='icons.svg#tel')
 

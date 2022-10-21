@@ -1,5 +1,5 @@
 a(href="#").header__logo
-  img(src=require('../../img/logo.svg') alt='логотип')
+  img(src=require('../../img/logo.png') alt='логотип')
 ul.header__bar-list
   li.header__bar-item
     a(href='#').header__bar-link Каталог товаров
@@ -18,26 +18,34 @@ ul.header__contacts-list
     ul.networks.networks__list
       li.networks__list-item
         a(href='#').networks__item-link
-          img(src=require('../../img/socialicons/vk.svg') alt='иконка vk').networks__item-img
+          svg(aria-hidden="true" width="20" height="20" fill="#4C858B").networks__item-img
+            use(xlink:href='icons.svg#vk')
       li.networks__list-item
         a(href='#').networks__item-link
-          img(src=require('../../img/socialicons/tg.svg') alt='иконка telegram').networks__item-img
+          svg(aria-hidden="true" width="20" height="20" fill="#4C858B").networks__item-img
+            use(xlink:href='icons.svg#tg')
       li.networks__list-item
         a(href='#').networks__item-link
-          img(src=require('../../img/socialicons/ig.svg') alt='иконка instagram').networks__item-img
+          svg(aria-hidden="true" width="20" height="20" fill="#4C858B").networks__item-img
+              use(xlink:href='icons.svg#ig')
       li.networks__list-item
         a(href='#').networks__item-link
-          img(src=require('../../img/socialicons/tel.svg') alt='иконка tel').networks__item-img
+          svg(aria-hidden="true" width="20" height="20" fill="#4C858B").networks__item-img
+            use(xlink:href='icons.svg#tel')
 ul.header__icons-list
   li.header__icons-item
     a(href='#').header__icons-link
-      img(src=require('../../img/headericons/search.svg')).header__icons-img
+      svg(aria-hidden="true" width="56" height="56")
+        use(xlink:href='icons.svg#search').header__icons-img
   li.header__icons-item
     a(href='#').header__icons-link
-      img(src=require('../../img/headericons/like.svg')).header__icons-img
+      svg(aria-hidden="true" width="56" height="56")
+        use(xlink:href='icons.svg#like').header__icons-img
   li.header__icons-item
     a(href='#').header__icons-link
-      img(src=require('../../img/headericons/bin.svg')).header__icons-img
+      svg(aria-hidden="true" width="56" height="56")
+        use(xlink:href='icons.svg#bin').header__icons-img
   li.header__icons-item
     a(href='#').header__icons-link
-      img(src=require('../../img/headericons/sidebar.svg')).header__icons-img
+      svg(aria-hidden="true" width="56" height="56")
+        use(xlink:href='icons.svg#sidebar').header__icons-img

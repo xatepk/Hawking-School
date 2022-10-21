@@ -4,7 +4,9 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const PugPlugin = require('pug-plugin');
+const  SpriteLoaderPlugin  =  require ( 'svg-sprite-loader/plugin' ) ;
 
+const glob = require('glob').sync;
 const mode = process.env.NODE_ENV || 'development';
 const devMode = mode === 'development';
 const devtool = devMode ? 'source-map' : undefined;
@@ -12,7 +14,10 @@ const devtool = devMode ? 'source-map' : undefined;
 module.exports = {
   mode,
   devtool,
-  entry: path.resolve(__dirname, 'src', 'js', 'index.js'),
+  entry: {
+    main: path.resolve(__dirname, 'src', 'js', 'index.js'),
+    sprite: glob(path.resolve(__dirname, 'src/img/icons/*.svg')),
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.[contenthash:8].js',
@@ -48,6 +53,15 @@ module.exports = {
         type: 'asset/resource',
       },
       {
+        test: /\.svg$/,
+        loader: 'svg-sprite-loader',
+        include: path.resolve(__dirname, 'src/img/icons'),
+        options: {
+          extract: true,
+          spriteFilename: 'icons.svg',
+        },
+      },
+      {
         test: /\.html$/,
         loader: 'html-loader',
       },
@@ -65,6 +79,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'assets/css/[name].[contenthash:8].css',
     }),
+    new SpriteLoaderPlugin(),
   ].filter(Boolean),
   optimization: {
     minimizer: [

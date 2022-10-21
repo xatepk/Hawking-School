@@ -1,10 +1,22 @@
 h2.consultation__title необходима консультация?
 p.consultation__heading оставьте заявку или свяжитесь с нами в социальных сетях
-ul.consultation__icons-list
-  for i in [1,2,3,4]
-    li.consultation__icon
-      a(href='#').consultation__icon-list
-        img(src="" alt="").consultation__icon-image
+ul.networks.networks__list
+      li.networks__list-item.consultation__list-item
+        a(href='#').networks__item-link
+          svg(aria-hidden="true" width="23" height="23" fill="#EA6628").networks__item-img.networks__item-img_orange
+            use(xlink:href='icons.svg#vk' )
+      li.networks__list-item.consultation__list-item
+        a(href='#').networks__item-link
+          svg(aria-hidden="true" width="22" height="23" fill="#EA6628").networks__item-img
+            use(xlink:href='icons.svg#tg')
+      li.networks__list-item.consultation__list-item
+        a(href='#').networks__item-link
+          svg(aria-hidden="true" width="18" height="19" fill="#EA6628").networks__item-img
+              use(xlink:href='icons.svg#ig')
+      li.networks__list-item.consultation__list-item
+        a(href='#').networks__item-link
+          svg(aria-hidden="true" width="18" height="19" fill="#EA6628").networks__item-img
+            use(xlink:href='icons.svg#tel')
 form(method="POST" action="#" name="profile" novalidate).consultation__form
   h2.consultation__form-title Для #[span.consultation__form-title_orange консультации] заполните форму!
   p.consultation__form-heading С Вами свяжутся в ближайшее время
