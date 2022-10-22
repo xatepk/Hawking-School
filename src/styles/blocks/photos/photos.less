@@ -6,4 +6,22 @@
   &:before {
     .border ();
   }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+
+    @media screen and (@breakpoint-md) {
+      grid-template-columns: repeat(auto-fit, minmax(226px, 1fr));
+    }
+
+    @media screen and (@breakpoint-xs) {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+
+  &__grid-item {
+    width: 100%;
+  }
 }
