@@ -1,19 +1,21 @@
 .photos {
   .max-width-mixin();
   .ptborder ();
-  margin-bottom: 116px;
+  margin-bottom: 127px;
 
   &:before {
     .border ();
   }
 
   &__grid {
+    margin-top: 45px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 
     @media screen and (@breakpoint-md) {
       grid-template-columns: repeat(auto-fit, minmax(226px, 1fr));
+      margin-top: 30px;
     }
 
     @media screen and (@breakpoint-xs) {
@@ -24,4 +26,8 @@
   &__grid-item {
     width: 100%;
   }
+
+  @media screen and (@breakpoint-md) {
+    margin-bottom: 56px;
+   }
 }

@@ -6,6 +6,12 @@
   justify-content: space-between;
   position: relative;
 
+  &__logo-img {
+    @media screen and (@breakpoint-lg) {
+      width: 64px;
+    }
+  }
+
   &__bar-list {
     list-style-type: none;
     padding: 0;
@@ -98,6 +104,10 @@
   &__icons-item {
     margin-left: 16px;
 
+    @media screen and (@breakpoint-lg) {
+      margin-left: 24px;
+    }
+
     &:first-of-type {
       margin-left: 0;
     }
@@ -118,7 +128,7 @@
   }
 
   @media screen and (@breakpoint-xxl) {
-    padding: 26px 15px 24px 15px;
+    padding: 26px 15px 19px 15px;
     border-bottom: 1px solid #E5E5E5;
     margin-bottom: 56px;
   }

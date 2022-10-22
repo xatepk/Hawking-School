@@ -41,6 +41,9 @@
 
     @media screen and (@breakpoint-md) {
       max-width: 100%;
+      padding-inline-start: 47px;
+      margin-top: 0;
+      margin-bottom: 58px;
     }
   }
 
@@ -62,12 +65,25 @@
     margin-top: 47px;
     margin-bottom: 39px;
 
+    @media screen and (@breakpoint-md) {
+      font-size: 30px;
+      line-height: 52px;
+      margin-top: 20px;
+      max-width: 585px;
+      margin-bottom: 0;
+    }
+
     &_orange {
       font-weight: 800;
       font-size: 50px;
       line-height: 63px;
       text-transform: uppercase;
       color: #E33E54;
+
+      @media screen and (@breakpoint-md) {
+        font-size: 40px;
+        line-height: 52px;
+      }
     }
   }
 
@@ -75,5 +91,9 @@
     margin: 23px 0;
     font-size: 16px;
     line-height: 24px;
+
+    @media screen and (@breakpoint-md) {
+      margin-left: 10px;
+    }
   }
 }

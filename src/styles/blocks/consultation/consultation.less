@@ -1,7 +1,7 @@
 .consultation {
   .max-width-mixin();
   margin-top: 98px;
-  margin-bottom: 124px;
+  margin-bottom: 110px;
 
   &__title {
     font-weight: 800;
@@ -11,6 +11,11 @@
     text-align: center;
     margin: 0;
     margin-top: 8px;
+
+    @media screen and (@breakpoint-md) {
+      font-size: 40px;
+      line-height: 30px;
+    }
   }
 
   &__heading {
@@ -32,6 +37,10 @@
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
     margin-top: 37px;
+
+    @media screen and (@breakpoint-md) {
+      text-align: center;
+    }
   }
 
   &__form-title{
@@ -41,6 +50,13 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 22px;
+
+    @media screen and (@breakpoint-md) {
+      font-size: 20px;
+      line-height: 22px;
+      padding-top: 37px;
+      letter-spacing: 0.06em;
+    }
 
     &_orange {
       color: #EA6628;
@@ -58,6 +74,16 @@
     line-height: 30px;
   }
 
+  &__input-block {
+    display: flex;
+
+    @media screen and (@breakpoint-md) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   &__input {
     border: 1px solid #E5E5E5;
     border-radius: 4px;
@@ -69,12 +95,26 @@
     line-height: 22px;
     margin-bottom: 51px;
 
+    @media screen and (@breakpoint-md) {
+      width: 340px;
+      margin-bottom: 15px;
+    }
+
     &:last-of-type{
       margin-right: 54px;
+
+      @media screen and (@breakpoint-md) {
+        margin-right: 0;
+        margin-bottom: 58px;
+      }
     }
 
     &:first-of-type {
       margin-left: 60px;
+
+      @media screen and (@breakpoint-md) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -85,6 +125,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: center;
+
+    @media screen and (@breakpoint-md) {
+      width: 240px;
+    }
 
     &:hover {
       opacity: .8;
@@ -98,5 +142,10 @@
     &:last-of-type {
       margin-right: 0;
     }
+  }
+
+  @media screen and (@breakpoint-md) {
+    margin-top: 49px;
+    margin-bottom: 55px;
   }
 }

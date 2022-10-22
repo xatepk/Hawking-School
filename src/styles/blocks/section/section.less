@@ -5,6 +5,11 @@
     font-size: 40px;
     line-height: 49px;
     margin: 0;
+
+    @media screen and (@breakpoint-md) {
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
 
   &__description {
@@ -12,10 +17,21 @@
     line-height: 30px;
     margin: 0;
     padding-top: 66px;
-    margin-bottom: 48px;
 
     &_pt {
       padding-top: 50px;
+
+      &:nth-child(2) {
+        padding-top: 66px;
+        @media screen and (@breakpoint-md) {
+          padding-top: 37px;
+         }
+      }
+
+      @media screen and (@breakpoint-md) {
+       padding-top: 37px;
+       margin-bottom: 22px;
+      }
     }
   }
 }

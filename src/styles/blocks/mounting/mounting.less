@@ -15,18 +15,45 @@
     margin: 0;
     margin-top: 51px;
     margin-bottom: 88px;
+
+    @media screen and (@breakpoint-md) {
+      margin-top: 0;
+      margin-bottom: 77px;
+    }
   }
 
   &__list-item {
     display: flex;
     align-items: center;
     margin-top: 35px;
+
+    @media screen and (@breakpoint-md) {
+      margin-top: 11px;
+    }
+
+    &:first-of-type img {
+      @media screen and (@breakpoint-md) {
+      width: 18px;
+      }
+    }
   }
 
   &__item-text {
     margin-left: 36px;
     font-size: 16px;
     line-height: 30px;
+
+    @media screen and (@breakpoint-md) {
+      margin-left: 10px;
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+
+  &__image {
+    @media screen and (@breakpoint-md) {
+      width: 30px;
+    }
   }
 
 }
