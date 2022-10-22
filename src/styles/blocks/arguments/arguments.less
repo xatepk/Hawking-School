@@ -8,13 +8,35 @@
 
   &__list {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     margin-top: 51px;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 385px));;
-    grid-column-gap: 30px;
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1218px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (@breakpoint-md) {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  &__list-item {
+    margin-top: 27px;
+    width: 387px;
+    margin-right: 28px;
+
+    @media screen and (@breakpoint-md) {
+      width: 354px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
   }
 
   &__title {

@@ -5,6 +5,10 @@
     width: 100%;
     background: url('../../../img/desc-bg.svg') top 0 left 600px no-repeat;
     background-size: contain;
+
+    @media screen and (@breakpoint-md) {
+      background: none;
+    }
   }
 
   &__title {
@@ -12,6 +16,11 @@
     font-size: 60px;
     line-height: 73px;
     margin: 0;
+
+    @media screen and (@breakpoint-xxl) {
+      font-size: 45px;
+      line-height: 55px;
+    }
   }
 
   &__text {
@@ -29,6 +38,10 @@
   &__list {
     margin-bottom: 114px;
     max-width: 584px;
+
+    @media screen and (@breakpoint-md) {
+      max-width: 100%;
+    }
   }
 
   &__list-item {

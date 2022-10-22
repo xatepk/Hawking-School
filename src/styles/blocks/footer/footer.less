@@ -9,6 +9,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 71px 0 92px 0;
+
+    @media screen and (@breakpoint-lg) {
+      display: inherit;
+      padding: 24px 0;
+    }
   }
 
   &__title {
@@ -17,6 +22,10 @@
     font-size: 22px;
     line-height: 27px;
     color: #fff;
+
+    @media screen and (@breakpoint-lg) {
+      display: none;
+    }
   }
 
   &__list {
@@ -49,6 +58,10 @@
     grid-template-columns: min-content 1fr;
     grid-row-gap: 4px;
     align-items: center;
+
+    @media screen and (@breakpoint-lg) {
+      display: none;
+    }
   }
 
   &__address-desc {
@@ -74,6 +87,11 @@
   &__networks {
     justify-content: start;
     margin-top: 31px;
+
+      @media screen and (@breakpoint-lg) {
+        justify-content: center;
+        margin-top: 0;
+      }
   }
 
   &__list-item {
@@ -90,6 +108,16 @@
     }
     &:nth-child(3) {
       margin-left: 100px;
+
+      @media screen and (@breakpoint-lg) {
+        margin-left: 0;
+      }
+    }
+
+    &_none {
+      @media screen and (@breakpoint-lg) {
+        display: none;
+      }
     }
   }
 }

@@ -12,6 +12,10 @@
     margin: 0;
     display: flex;
     margin-left: 80px;
+
+    @media screen and (@breakpoint-xxl) {
+      display: none;
+    }
   }
 
   &__bar-item {
@@ -42,6 +46,10 @@
     display: flex;
     align-items: center;
     margin-left: 30px;
+
+    @media screen and (@breakpoint-xxl) {
+      display: none;
+    }
   }
 
   &__contacts-link {
@@ -99,6 +107,19 @@
       top: 76px;
       transform: translate(0, -50%);
       left: 200px;
+
+      @media screen and (@breakpoint-xxl) {
+        position: inherit;
+        top: none;
+        transform: none;
+        left: none;
+      }
     }
+  }
+
+  @media screen and (@breakpoint-xxl) {
+    padding: 26px 15px 24px 15px;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 56px;
   }
 }
