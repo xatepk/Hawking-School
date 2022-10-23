@@ -8,7 +8,7 @@
   border-bottom: 1px solid #E5E5E5;
 
   & li+li:before {
-    padding: 6px;
+    padding: 7px;
     color: #4C858B;
     content: "\003E";
   }
@@ -34,8 +34,28 @@
     }
   }
 
+  &__item_bplg {
+    @media screen and (@breakpoint-xs) {
+      display: none;
+    }
+  }
+
+  &__item_bpxs {
+    display: none;
+    @media screen and (@breakpoint-xs) {
+      display: inline;
+    }
+  }
+
   @media screen and (@breakpoint-lg) {
     margin-top: 26px;
     margin-bottom: 58px;
+  }
+
+  @media screen and (@breakpoint-xs) {
+    margin-top: 12px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    margin-bottom: 16px;
   }
 }

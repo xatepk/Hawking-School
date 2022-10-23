@@ -10,6 +10,11 @@
       font-size: 30px;
       line-height: 37px;
     }
+
+    @media screen and (@breakpoint-xs) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &__description {
@@ -18,6 +23,11 @@
     margin: 0;
     padding-top: 66px;
 
+    @media screen and (@breakpoint-xs) {
+      font-size: 14px;
+      line-height: 26px;
+     }
+
     &_pt {
       padding-top: 50px;
 
@@ -25,12 +35,15 @@
         padding-top: 66px;
         @media screen and (@breakpoint-md) {
           padding-top: 37px;
-         }
+        }
+
+        @media screen and (@breakpoint-xs) {
+          padding-top: 22px;
+        }
       }
 
       @media screen and (@breakpoint-md) {
        padding-top: 37px;
-       margin-bottom: 22px;
       }
     }
   }

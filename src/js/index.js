@@ -1,2 +1,19 @@
 import '../styles/index.less';
-console.log('fdgs');
+
+const form = document.querySelector('.consultation__form');
+
+function formHandler(evt) {
+  evt.preventDefault();
+  console.log("Скоро доработаем...");
+
+}
+
+form.addEventListener('submit', formHandler);
+
+
+
+
+
+
+
+

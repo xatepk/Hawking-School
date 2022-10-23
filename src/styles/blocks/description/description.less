@@ -21,6 +21,12 @@
       font-size: 45px;
       line-height: 55px;
     }
+
+    @media screen and (@breakpoint-xs) {
+      font-size: 30px;
+      line-height: 37px;
+      padding-top: 41px;
+    }
   }
 
   &__text {
@@ -33,6 +39,11 @@
       color: #E33E54;
       font-weight: 600;
     }
+
+    @media screen and (@breakpoint-xs) {
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 
   &__list {
@@ -44,6 +55,11 @@
       padding-inline-start: 47px;
       margin-top: 0;
       margin-bottom: 58px;
+    }
+
+    @media screen and (@breakpoint-xs) {
+      padding-inline-start: 30px;
+      margin-bottom: 44px;
     }
   }
 
@@ -73,6 +89,12 @@
       margin-bottom: 0;
     }
 
+    @media screen and (@breakpoint-xs) {
+      font-size: 18px;
+      line-height: 37px;
+      margin-top: 15px;
+    }
+
     &_orange {
       font-weight: 800;
       font-size: 50px;
@@ -84,6 +106,11 @@
         font-size: 40px;
         line-height: 52px;
       }
+
+      @media screen and (@breakpoint-xs) {
+        font-size: 30px;
+        line-height: 37px;
+      }
     }
   }
 
@@ -92,8 +119,17 @@
     font-size: 16px;
     line-height: 24px;
 
+    &:nth-child(1) {
+      margin-top: 10px;
+    }
+
     @media screen and (@breakpoint-md) {
       margin-left: 10px;
+    }
+
+    @media screen and (@breakpoint-xs) {
+      font-size: 14px;
+      letter-spacing: 0.01em;
     }
   }
 }

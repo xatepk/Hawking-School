@@ -16,6 +16,10 @@
       font-size: 40px;
       line-height: 30px;
     }
+
+    @media screen and (@breakpoint-xs) {
+      font-size: 22px;
+    }
   }
 
   &__heading {
@@ -25,6 +29,15 @@
     text-align: center;
     margin: 0;
     margin-bottom: 31px;
+
+    @media screen and (@breakpoint-md) {
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    @media screen and (@breakpoint-xs) {
+      margin-bottom: 20px;
+    }
   }
 
   &__icons-list {
@@ -40,6 +53,11 @@
 
     @media screen and (@breakpoint-md) {
       text-align: center;
+    }
+
+    @media screen and (@breakpoint-xs) {
+      box-shadow: none;
+      margin-top: 13px;
     }
   }
 
@@ -58,6 +76,14 @@
       letter-spacing: 0.06em;
     }
 
+    @media screen and (@breakpoint-xs) {
+      font-size: 18px;
+      line-height: 26px;
+      padding-left: 0;
+      padding-top: 10px;
+      letter-spacing: normal;
+    }
+
     &_orange {
       color: #EA6628;
       font-weight: 700;
@@ -72,6 +98,12 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+
+    @media screen and (@breakpoint-xs) {
+      padding-left: 0;
+      font-size: 14px;
+      line-height: 25px;
+    }
   }
 
   &__input-block {
@@ -100,12 +132,23 @@
       margin-bottom: 15px;
     }
 
+    @media screen and (@breakpoint-xs) {
+      width: 100%;
+      max-width: 290px;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+
     &:last-of-type{
       margin-right: 54px;
 
       @media screen and (@breakpoint-md) {
         margin-right: 0;
         margin-bottom: 58px;
+      }
+
+      @media screen and (@breakpoint-xs) {
+        margin-bottom: 6px;
       }
     }
 
