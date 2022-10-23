@@ -27,6 +27,50 @@
 
   &__grid-item {
     width: 100%;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
+  }
+
+  &__grid-block {
+    position: relative;
+    z-index: 2;
+
+    &:before, &:after {
+      position: absolute;
+      content: '';
+      width: 50px;
+      height: 50px;
+      z-index: 99;
+
+      @media screen and (@breakpoint-xs) {
+        width: 30;
+        height: 30;
+        border-width: 2px;
+      }
+    }
+
+    &:after {
+      left: 6px;
+      bottom: 18px;
+      border-bottom: 4px solid #4C858B;
+      border-left: 4px solid #4C858B;
+
+      @media screen and (@breakpoint-xs) {
+        left: 4px;
+        bottom: 11px;
+      }
+    }
+
+    &:before {
+      top: 6px;
+      right: 10px;
+      border-top: 4px solid #4C858B;
+      border-right: 4px solid #4C858B;
+
+      @media screen and (@breakpoint-xs) {
+        top: 4px;
+        right: 5px;
+      }
+    }
   }
 
   @media screen and (@breakpoint-md) {

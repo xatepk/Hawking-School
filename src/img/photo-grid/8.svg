@@ -2,10 +2,6 @@
 <g filter="url(#filter0_d_1_369)">
 <rect x="10" y="6" width="282" height="260" fill="url(#pattern0)"/>
 </g>
-<rect x="10" y="262" width="50" height="4" fill="#4C858B"/>
-<rect x="10" y="266" width="50" height="4" transform="rotate(-90 10 266)" fill="#4C858B"/>
-<rect x="292" y="10" width="50" height="4" transform="rotate(-180 292 10)" fill="#4C858B"/>
-<rect x="292" y="6" width="50" height="4" transform="rotate(90 292 6)" fill="#4C858B"/>
 <defs>
 <filter id="filter0_d_1_369" x="0" y="0" width="302" height="280" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
