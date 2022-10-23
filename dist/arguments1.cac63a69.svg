@@ -1,0 +1,8 @@
+export default {
+      id: "arguments1-usage",
+      viewBox: "0 0 79 79",
+      url: __webpack_public_path__ + "/Users/ostrovsky/dev/Hawking-School/src/img/icons/arguments1.svg",
+      toString: function () {
+        return this.url;
+      }
+    }
