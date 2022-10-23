@@ -1,8 +1,0 @@
-export default {
-      id: "sidebar-usage",
-      viewBox: "0 0 56 56",
-      url: __webpack_public_path__ + "/Users/ostrovsky/dev/Hawking-School/src/img/icons/sidebar.svg",
-      toString: function () {
-        return this.url;
-      }
-    }
